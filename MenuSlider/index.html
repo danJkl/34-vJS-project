@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" id="wraper">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>Menu Slider</title>
+</head>
+<body>
+    <nav ><div class="logo">
+            <img src="logo.png" alt="">
+        </div>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div >
+    <header>
+        <button id="toggle" class="toggle">
+            <i class="fa fa-bars fa-2x"></i>
+        </button>
+        <h1>buble.com</h1>
+        <p>learning how to create web</p>
+        <button class="create-account" id="open">Create Acount</button>
+    </header>
+
+    <div class="container">
+        <h2>Web Development</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam quibusdam et hic quaerat impedit minima.</p>
+        <h2>Web Design</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo adipisci eius obcaecati optio facere sunt!</p>
+
+    </div>
+</div>
+    <div class="modal-container" id="modal">
+        <div class="modal">
+            <button class="closebtn" id="close">
+                <i class="fa fa-times"></i>
+            </button>
+            <div class="modal-header">
+                <h3>Create an Account</h3>
+            </div>
+            <div class="modal-content">
+                <p>Create Account</p>
+                <form  class="modal-form">
+                    <div>
+                        <label for="">Username</label>
+                        <input type="text" class="form-input" >
+                    </div>
+                    <div>
+                        <label for="">Email</label>
+                        <input type="email" class="form-input" >
+                    </div>
+                    <div>
+                        <label for="">Password</label>
+                        <input type="password" class="form-input" >
+                    </div>
+                    <input type="submit" value="register" class="submit-btn">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

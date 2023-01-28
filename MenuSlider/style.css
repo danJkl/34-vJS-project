@@ -1,0 +1,176 @@
+:root{
+    --primary-color:#303366;
+    --secondary-color:red;
+    --modal-delay:1s;
+}
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+}
+nav{
+    background-color: var(--primary-color);
+    border-right: 2px solid rgba(200, 200, 200,0.1);
+    color:#fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    z-index: 100;
+    transform: translateX(-100%);
+}
+
+nav .logo{
+    padding: 30px 0;
+    text-align: center;
+}
+
+nav .logo img{
+    width: 75px;
+    height:75px;
+    border-radius: 50% ;
+}
+
+nav ul{
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+}
+
+nav ul li{
+    border-bottom: 2px solid rgba(200, 200, 200,0.1);
+    padding:  20px;
+}
+nav ul li a{
+    color:#fff;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+}
+header{
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 130%;
+    position:relative;
+    text-align: center;
+    padding: 40px 15px;
+}
+header h1{
+    margin: 0;
+}
+header p{
+    margin: 30px;
+}
+button, input[type="submit"]{
+    background-color: var(--secondary-color);
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+.toggle{
+    background-color: rgba(0 , 0, 0, 0.2);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+}
+.create-account{
+    padding:12px 30px;
+}
+.container{
+    padding: 15px;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 50rem;
+}
+
+body.show-nav{
+    transform:translateX(12.5rem);
+}
+body{
+    transition: transform 0.3s ease;
+}
+
+
+.wrap{
+    animation: mymove 0.3s ease-in-out 0s forwards;
+}
+
+
+@keyframes mymove {
+    from {width: 100vw;}
+    to {width: 86vw;}
+  }
+
+.modal-container{
+    display:none;
+    position:fixed;
+    background-color: rgba(0, 0, 0, 0.6 );
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.modal{
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 25rem ;
+    max-width: 100%;
+}
+.modal{
+    animation: modalOpen;
+    animation-duration: var(--modal-delay);
+}
+
+.modal-container.show-modal{
+    display: block;
+}
+.modal-header{
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 1rem;
+}
+.modal-header h3{
+    margin: 0;
+}
+.modal-content{
+    padding: 1.3rem;
+}
+.modal-form div{
+    margin: 1rem 0;
+}
+.modal-form label{
+    display: block;
+    margin-bottom: 5px;
+}
+.modal-form .form-input{
+    padding:0.5rem;
+    width: 100%;
+}
+.closebtn{
+    position:absolute;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    font-size: 2rem;
+}
+@keyframes modalOpen {
+    from{
+        opacity: 0;
+    }  
+    to{
+        opacity: 1;
+    }  
+}
