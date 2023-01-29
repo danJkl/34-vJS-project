@@ -1,0 +1,21 @@
+html{
+    box-sizing: border-box;
+    background-color: rgb(0, 0, 0);
+}
+body{
+    margin: 0;
+}
+.wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     flex-direction: column;
+}
+h1{
+    color: #fff;
+
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
